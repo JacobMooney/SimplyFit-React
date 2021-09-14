@@ -1,9 +1,11 @@
-import OptionsForm from './components/OptionsFormComponent';
 import './App.css';
+import MainComponent from './components/MainComponent';
 
 function App() {
   return (
-    <OptionsForm></OptionsForm>
+
+  <MainComponent></MainComponent>
+
   );
 }
 
