@@ -1,5 +1,7 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import OptionsForm from './OptionsFormComponent';
+import WorkoutDisplay from './WorkoutDisplayComponent';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 class MainComponent extends Component {
     constructor(props) {
@@ -10,33 +12,45 @@ class MainComponent extends Component {
             cardio: false,
             stretching: false
         }
-        this.inputChangeHandler = this.inputChangeHandler.bind(this);
-        this.selectChangeHandler = this.selectChangeHandler.bind(this);
+        this.toggleChangeHandler = this.toggleChangeHandler.bind(this);
         this.stateCheck = this.stateCheck.bind(this);
-    }
+        this.handleChange = this.handleChange.bind(this)
 
+    }
     stateCheck() {
         console.log(this.state);
-
     }
 
-    inputChangeHandler(event) {
-        this.setState({ [event.target.name]: event.target.value });
+    // Use the submitted data to set the state
+    handleChange(event) {
+        const { name, value } = event.target
+        this.setState({
+            [name]: value
+        })
     }
 
-    selectChangeHandler(event) {
-        // console.log(event.target.value === "false"); event.target.value is returning a string instead of bool 
-        (event.target.value === 'false')
+    toggleChangeHandler(event) {
+        //event.target.value is returning a string instead of bool
+        const { name, value } = event.target;
+        // console.log(event.target.value);
+        // console.log(event.target.name);
+        (value === 'false')
             ?
-            this.setState({ [event.target.name]: true })
+            this.setState({ [name]: true })
             :
-            this.setState({ [event.target.name]: false });
+            this.setState({ [name]: false });
     }
-
 
     render() {
         return (
-            <OptionsForm></OptionsForm>
+            <Switch>
+                <Route exact path='/home'
+                    render={() => <OptionsForm formInfo={this.state} handleChange={this.handleChange} toggleChange={this.toggleChangeHandler} />
+                    } />
+                <Route exact path='/workoutDisplay'
+                    render={() => <WorkoutDisplay selectionInfo={this.state} />} />
+                <Redirect to='/home' />
+            </Switch>
         );
     }
 }

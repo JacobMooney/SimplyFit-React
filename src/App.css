@@ -44,11 +44,13 @@ $gradient-top-left: linear-gradient(225deg, #e63946ff, #f1faeeff, #a8dadcff, #45
 $gradient-bottom-left: linear-gradient(315deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
 $gradient-radial: radial-gradient(#e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff); */
 
-body{
-    background-color: #f1faeeff;
+.optionsForm{
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
-.optionsForm{
+.workoutDisplay{
     height: 100vh;
     display: grid;
     place-items: center;
