@@ -7,7 +7,7 @@ class WorkoutDisplay extends Component {
     render() {
         return(
             <React.Fragment>
-                <Container className="workoutDisplay">
+                <Container className="optionsForm">
                     <CardGroup>
                         <WorkoutBuilder selections={this.props.selectionInfo} />
                     </CardGroup>

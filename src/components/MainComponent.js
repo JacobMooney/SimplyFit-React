@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import OptionsForm from './OptionsFormComponent';
 import WorkoutDisplay from './WorkoutDisplayComponent';
 import { Route, Switch, Redirect } from 'react-router-dom';
+import LandingPage from './LandingComponent';
+import NutritionPage from './NutritionComponent';
 
 class MainComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
             daysSelected: 3,
-            goalSelected: 'hybrid',
+            goalSelected: 'Hybrid',
             cardio: false,
             stretching: false
         }
@@ -44,7 +46,10 @@ class MainComponent extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path='/home'
+                <Route path='/home' component={LandingPage} />
+                <Route path='/nutrition' component={NutritionPage} />
+                <Route path='/education' component={NutritionPage} />
+                <Route exact path='/options'
                     render={() => <OptionsForm formInfo={this.state} handleChange={this.handleChange} toggleChange={this.toggleChangeHandler} />
                     } />
                 <Route exact path='/workoutDisplay'

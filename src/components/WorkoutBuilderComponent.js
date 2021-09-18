@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function CardioOption({ option }) {
     if (option) {
         return (
-            <div>
+            <h5>
                 Cardio: 10 min
-            </div>
+            </h5>
         )
     }
     return (
@@ -18,9 +18,9 @@ function CardioOption({ option }) {
 function StretchingOption({ option }) {
     if (option) {
         return (
-            <div>
-                Stretching: 10min
-            </div>
+            <h5>
+                Stretching: 10 min
+            </h5>
         )
     }
     return (
@@ -33,9 +33,9 @@ function NumOfDays({ selections }) {
     for (let i = 0; i < selections.daysSelected; i++) {
         nDays.push(
             <Card>
-                <CardBody>
-                    <CardTitle>Workout: {i+1}</CardTitle>
-                    <ListGroup>
+                <CardBody className="optionsCard">
+                    <CardTitle><h3>Workout: {i+1}</h3></CardTitle>
+                    <ListGroup className="workoutCol">
                         <CardioOption option={selections.cardio} />
                         <DayRoutine id={i} dayNum={i+1} goalType={selections.goalSelected} selections={selections} />
                         <StretchingOption option={selections.stretching} />

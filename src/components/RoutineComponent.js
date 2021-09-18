@@ -13,42 +13,42 @@ function DayRoutine (props) {
     const compounds = WORKOUTLIST[4].exercises;
     const dayNum = props.dayNum;
     console.log(props);
-    if(props.goalType==='strength'){
+    if(props.goalType==='Strength'){
         return (
             <React.Fragment>
-                <ListGroupItem>{compounds[(dayNum) % compounds.length]}: 5 Sets x 5 Reps</ListGroupItem>
-                <ListGroupItem>{compounds[(dayNum+2) % compounds.length]}: 5 Sets x 5 Reps</ListGroupItem>
-                <ListGroupItem>{legs.exercises[(dayNum) % legs.exercises.length]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{pull.exercises[[(dayNum) % pull.exercises.length]]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{push.exercises[[(dayNum) % push.exercises.length]]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{abdominals.exercises[(dayNum) % abdominals.exercises.length]}: 3 Sets x 25-30 Reps</ListGroupItem>
+                <ListGroupItem><h5>{compounds[(dayNum) % compounds.length]}:</h5> 5 Sets x 5 Reps</ListGroupItem>
+                <ListGroupItem><h5>{compounds[(dayNum+2) % compounds.length]}:</h5> 5 Sets x 5 Reps</ListGroupItem>
+                <ListGroupItem><h5>{legs.exercises[(dayNum) % legs.exercises.length]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{pull.exercises[[(dayNum) % pull.exercises.length]]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{push.exercises[[(dayNum) % push.exercises.length]]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{abdominals.exercises[(dayNum) % abdominals.exercises.length]}:</h5> 3 Sets x 25-30 Reps</ListGroupItem>
             </React.Fragment>
         )
     }
-    else if(props.goalType==='bodybuilding'){
+    else if(props.goalType==='Bodybuilding'){
         return (
             <React.Fragment>
-                <ListGroupItem>{compounds[(dayNum) % compounds.length]}: 3 Sets of 10-12 Reps</ListGroupItem>
-                <ListGroupItem>{compounds[(dayNum+2) % compounds.length]}: 3 Sets x 10-12 Reps</ListGroupItem>
-                <ListGroupItem>{legs.exercises[(dayNum) % legs.exercises.length]}: 3 Sets x 12 Reps</ListGroupItem>
-                <ListGroupItem>{push.exercises[[(dayNum) % push.exercises.length]]}: 3 Sets x 12 Reps</ListGroupItem>
-                <ListGroupItem>{pull.exercises[[(dayNum) % pull.exercises.length]]}: 3 Sets x 12 Reps</ListGroupItem>
-                <ListGroupItem>{push.exercises[[(dayNum+2) % push.exercises.length]]}: 3 Sets x 12 Reps</ListGroupItem>
-                <ListGroupItem>{pull.exercises[[(dayNum+2) % pull.exercises.length]]}: 3 Sets x 12 Reps</ListGroupItem>
-                <ListGroupItem>{abdominals.exercises[(dayNum) % abdominals.exercises.length]}: 3 Sets x 25-30 Reps</ListGroupItem>
+                <ListGroupItem><h5>{compounds[(dayNum) % compounds.length]}:</h5> 3 Sets of 10-12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{compounds[(dayNum+2) % compounds.length]}:</h5> 3 Sets x 10-12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{legs.exercises[(dayNum) % legs.exercises.length]}:</h5> 3 Sets x 12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{push.exercises[[(dayNum) % push.exercises.length]]}:</h5> 3 Sets x 12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{pull.exercises[[(dayNum) % pull.exercises.length]]}:</h5> 3 Sets x 12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{push.exercises[[(dayNum+2) % push.exercises.length]]}:</h5> 3 Sets x 12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{pull.exercises[[(dayNum+2) % pull.exercises.length]]}:</h5> 3 Sets x 12 Reps</ListGroupItem>
+                <ListGroupItem><h5>{abdominals.exercises[(dayNum) % abdominals.exercises.length]}:</h5> 3 Sets x 25-30 Reps</ListGroupItem>
             </React.Fragment>
         )
     }
     else{
         return (
             <React.Fragment>
-                <ListGroupItem>{compounds[(dayNum) % compounds.length]}: 4 Sets x 6 Reps</ListGroupItem>
-                <ListGroupItem>{compounds[(dayNum+2) % compounds.length]}: 4 Sets x 6 Reps</ListGroupItem>
-                <ListGroupItem>{push.exercises[[(dayNum) % push.exercises.length]]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{legs.exercises[(dayNum) % legs.exercises.length]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{pull.exercises[[(dayNum) % pull.exercises.length]]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{push.exercises[[(dayNum) % push.exercises.length]]}: 3 Sets x 10 Reps</ListGroupItem>
-                <ListGroupItem>{abdominals.exercises[(dayNum) % abdominals.exercises.length]}: 3 Sets x 25-30 Reps</ListGroupItem>
+                <ListGroupItem><h5>{compounds[(dayNum) % compounds.length]}:</h5> 4 Sets x 6 Reps</ListGroupItem>
+                <ListGroupItem><h5>{compounds[(dayNum+2) % compounds.length]}:</h5> 4 Sets x 6 Reps</ListGroupItem>
+                <ListGroupItem><h5>{push.exercises[[(dayNum) % push.exercises.length]]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{legs.exercises[(dayNum) % legs.exercises.length]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{pull.exercises[[(dayNum) % pull.exercises.length]]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{push.exercises[[(dayNum) % push.exercises.length]]}:</h5> 3 Sets x 10 Reps</ListGroupItem>
+                <ListGroupItem><h5>{abdominals.exercises[(dayNum) % abdominals.exercises.length]}:</h5> 3 Sets x 25-30 Reps</ListGroupItem>
             </React.Fragment>
         )
     }

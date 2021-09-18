@@ -1,82 +1,198 @@
-/* CSS HEX
---imperial-red: #e63946ff;
---honeydew: #f1faeeff;
---powder-blue: #a8dadcff;
---celadon-blue: #457b9dff;
---prussian-blue: #1d3557ff;
+/* CSS HEX */
 
-CSS HSL
---imperial-red: hsla(355, 78%, 56%, 1);
---honeydew: hsla(105, 55%, 96%, 1);
---powder-blue: hsla(182, 43%, 76%, 1);
---celadon-blue: hsla(203, 39%, 44%, 1);
---prussian-blue: hsla(215, 50%, 23%, 1);
+/* --prussian-blue: #003049ff;
+--maximum-red: #d62828ff;
+--orange: #f77f00ff;
+--maximum-yellow-red: #fcbf49ff;
+--floral-white: #fbf9efff; */
 
-SCSS HEX
-$imperial-red: #e63946ff;
-$honeydew: #f1faeeff;
-$powder-blue: #a8dadcff;
-$celadon-blue: #457b9dff;
-$prussian-blue: #1d3557ff;
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./shared/img/photo-1597076537061-a6b58163aa45.jpg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    width: auto;
+    height: 100%;
+}
 
-SCSS HSL
-$imperial-red: hsla(355, 78%, 56%, 1);
-$honeydew: hsla(105, 55%, 96%, 1);
-$powder-blue: hsla(182, 43%, 76%, 1);
-$celadon-blue: hsla(203, 39%, 44%, 1);
-$prussian-blue: hsla(215, 50%, 23%, 1);
+.main-wrapper {
+    height: 100vh;
+    min-height: 40rem;
+    padding: 8rem, 2rem, 8rem, 2rem;
+}
 
-SCSS RGB
-$imperial-red: rgba(230, 57, 70, 1);
-$honeydew: rgba(241, 250, 238, 1);
-$powder-blue: rgba(168, 218, 220, 1);
-$celadon-blue: rgba(69, 123, 157, 1);
-$prussian-blue: rgba(29, 53, 87, 1);
+.jumbotron {
+    margin: 0px;
+}
 
-SCSS Gradient
-$gradient-top: linear-gradient(0deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-right: linear-gradient(90deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-bottom: linear-gradient(180deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-left: linear-gradient(270deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-top-right: linear-gradient(45deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-bottom-right: linear-gradient(135deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-top-left: linear-gradient(225deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-bottom-left: linear-gradient(315deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
-$gradient-radial: radial-gradient(#e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff); */
+.nav-section{
+    height: 40px;
+}
 
-.optionsForm{
+.navbar {
+    background: linear-gradient(150deg, #003049ff, #fbf9efff);
+    border-bottom: 0.16em solid rgb(255, 255, 255);
+    background-position: bottom;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.bn3 {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid white;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.5s;
+    background-color: #fbf9efff;
+}
+
+.bn3:hover {
+    color: #fbf9efff;
+    background-color: #fcbf49ff;
+    border: 0.16em solid #fcbf49ff;
+}
+
+.infoSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: 70vh;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#about {
+    background: linear-gradient(120deg, #003049ff, #fbf9efff);
+}
+
+#nutrition {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./shared/img/nutrition-pic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#training {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./shared/img/blue-equipment.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#programBuilder {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./shared/img/gym-1-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.optionsPage {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-items: stretch;
+}
+
+.optionsForm {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-items: stretch;
+}
+
+.workoutDisplay {
     height: 100vh;
     display: grid;
     place-items: center;
 }
 
-.workoutDisplay{
-    height: 100vh;
-    display: grid;
-    place-items: center;
+.optionsCol {
+    background-color: #fcbf49ff;
+    height: 30rem;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    filter: drop-shadow(10px 10px 1px #003049ff);
+    transition: 0.3s;
 }
 
-.optionsCol{
-    background-color: #a8dadcff;
-    height: 25rem;
-    width: 30%;
+.workoutCol {
+    border-radius: 5%;
+}
+
+.optionsCol:hover {
+    transform: translate(-0.05em, -0.05em);
+    filter: drop-shadow(10px 10px 5px #003049ff);
+}
+
+.optionsBtn {
+    font-size: 1.5rem;
+    border: 1px solid #fcbf49ff;
+    font-size: 2rem;
+    background-color: #003049ff !important;
+    border-color: #f77f00ff;
+}
+
+.submitRow{
+    display: grid;
+    place-items: center;
+    justify-items: stretch;
+}
+
+.NavigationBtnRight {
+    font-size: 1.5rem;
+    border: 1px solid #fcbf49ff;
+    font-size: 2rem;
+    background-color: #003049ff !important;
+    border-color: #f77f00ff;
+    display:block;
+    align-content: flex-end;
+}
+
+.NavigationBtnLeft {
+    font-size: 1.5rem;
+    border: 1px solid #fcbf49ff;
+    font-size: 2rem;
+    background-color: #003049ff !important;
+    border-color: #f77f00ff;
+}
+
+
+.optionsBtn:focus {
+    font-size: 1.5rem;
+    border: 1px solid #fcbf49ff;
+    background-color: #f77f00ff !important;
+    border-color: #fcbf49ff;
+}
+
+:target {
+    background-color: #f77f00ff !important;
+}
+
+.optionsCard {
+    width: 100%;
+    border-color: #003049ff;
     border-radius: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    filter: drop-shadow(10px 10px 1px #1d3557ff);
-    transition: 0.2s;
 }
 
-.optionsCol:hover{
-    transform: translate(-0.25em, -0.25em);
-    filter: drop-shadow(10px 10px 5px #1d3557ff);
-}
-
-
-.optionsBtn{
-    /* display: block; */
-    border: 1px solid #a8dadcff;
-    font-size: 2rem;
+.optionsHeader {
+    display: grid;
+    place-items: center;
 }

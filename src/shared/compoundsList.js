@@ -38,7 +38,7 @@ export const WORKOUTLIST = [
         bodypart: "abs",
         exercises: [
             "Crunches",
-            "Weighted Cabale Crunch",
+            "Weighted Cable Crunch",
             "Side Bends"
         ]
     },
