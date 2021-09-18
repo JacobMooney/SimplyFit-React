@@ -13,7 +13,7 @@ export const WORKOUTLIST = [
             "Lateral Dumbell Raise"
         ]
     },
-    {
+    {   
         id: 1,
         bodypart: "pull",
         exercises: [
