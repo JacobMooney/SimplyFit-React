@@ -7,7 +7,7 @@ function CardioOption({ option }) {
     if (option) {
         return (
             <h5>
-                Cardio: 10 min
+                Cardio - 10 min
             </h5>
         )
     }
@@ -19,7 +19,7 @@ function StretchingOption({ option }) {
     if (option) {
         return (
             <h5>
-                Stretching: 10 min
+                Stretching - 10 min
             </h5>
         )
     }
