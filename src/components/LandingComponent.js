@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-
 function LandingPage() {
     return (
         <body class="landing-page">
