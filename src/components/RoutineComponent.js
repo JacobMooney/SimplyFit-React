@@ -12,7 +12,7 @@ function DayRoutine (props) {
     const abdominals = WORKOUTLIST[3];
     const compounds = WORKOUTLIST[4].exercises;
     const dayNum = props.dayNum;
-    console.log(props);
+    console.log(compounds);
     if(props.goalType==='Strength'){
         return (
             <React.Fragment>

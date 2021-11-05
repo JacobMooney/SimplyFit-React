@@ -27,7 +27,7 @@
     margin: 0px;
 }
 
-.nav-section{
+.nav-section {
     height: 40px;
 }
 
@@ -131,8 +131,25 @@
     transition: 0.3s;
 }
 
-.workoutCol {
-    border-radius: 5%;
+ul.workoutCol {
+    background-color: #fcbf49ff;
+    filter: drop-shadow(1px 1px 1px #003049ff);
+    transition: 0.3s;
+}
+
+
+ul.workoutCol.list-group>h5 {
+    width: 339px;
+    max-width: 339px;
+    height: 24px;
+    max-height: 24px;
+    margin-top: 3px;
+    margin-left: 6px;
+    text-align: left;
+}
+
+html>body>#root>div.optionsPage.container>div:nth-of-type(3)>div.col {
+    text-align: right;
 }
 
 .optionsCol:hover {
@@ -148,7 +165,7 @@
     border-color: #f77f00ff;
 }
 
-.submitRow{
+.submitRow {
     display: grid;
     place-items: center;
     justify-items: stretch;
@@ -160,7 +177,7 @@
     font-size: 2rem;
     background-color: #003049ff !important;
     border-color: #f77f00ff;
-    display:block;
+    display: block;
     align-content: flex-end;
 }
 
@@ -171,7 +188,6 @@
     background-color: #003049ff !important;
     border-color: #f77f00ff;
 }
-
 
 .optionsBtn:focus {
     font-size: 1.5rem;

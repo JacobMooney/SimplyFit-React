@@ -18,7 +18,7 @@ export const WORKOUTLIST = [
         bodypart: "pull",
         exercises: [
             "Cable Lat Pulldown",
-            "Single Arm Dumbell Row",
+            "Single Arm Dumbbell Row",
             "Seated Cable Row",
             "Dumbbell Curl",
             "Cable Curl"

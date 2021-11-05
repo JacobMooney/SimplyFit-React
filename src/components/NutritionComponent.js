@@ -15,15 +15,12 @@ class NutritionPage extends Component {
             level: 1.2
         }
         this.toggleChangeHandler = this.toggleChangeHandler.bind(this);
-        this.stateCheck = this.stateCheck.bind(this);
         this.handleChange = this.handleChange.bind(this)
 
         //(Inch*2.54)+(Feet*30.48)
         //(Pound*2.205)
     }
-    stateCheck() {
-        console.log(this.state);
-    }
+
 
     // Use the submitted data to set the state
     handleChange(event) {
@@ -56,6 +53,7 @@ class NutritionPage extends Component {
         const kgWeight = (this.state.weight / 2.205)
         const maleOption = Math.round(((66 + (13.7 * kgWeight) + (5 * cmHeight) - (6.8 * this.state.age))) * this.state.level);
         const femaleOption = Math.round(((655 + (9.6 * kgWeight) + (1.8 * cmHeight) - (4.7 * this.state.age))) * this.state.level);
+        const calcCalories = (this.state.gender === 1 ? maleOption : femaleOption);
         console.log(this.state);
         return (
             <body>
@@ -77,7 +75,7 @@ class NutritionPage extends Component {
                 </nav>
 
                 <div class="container py-5">
-                    <h1>Basics of nutrition and training</h1>
+                    <h1>Basics of nutrition for training</h1>
                     <p>
                         In order to make the most out of your training journey, it is important
                         to know the basics about nutrition and lifting. This section is
@@ -110,7 +108,7 @@ class NutritionPage extends Component {
                         </div>
                     </div>
                     <h2 class="my-4">Daily Calories:
-                        <span class="mx-3">{(this.state.gender === 1 ? maleOption : femaleOption)}</span>
+                        <span class="mx-3">{calcCalories}</span>
                     </h2>
                     <h5 class="mt-2">Macronutrients</h5>
                     <p>Macronutrients are the largest types of nutrients that make up calories in the things we eat. In the context
@@ -142,7 +140,7 @@ class NutritionPage extends Component {
                         <li><strong>In order to LOSE weight you must consume less calories than you need per day.</strong></li>
                     </ul>
                     <h6>Example Application</h6>
-                    <p>A common method used to gain or lose weight is to simply calculate your TDEE and either add or subtract 200-500 calories from the result. A smaller deficit/surplus is typically easier to follow but obviously will result in slower results. Below is an example table showing the calories needed to gain or lose weight for someone with a TDEE of 2,000 calories.</p>
+                    <p>A common method used to gain or lose weight is to simply calculate your TDEE and either add or subtract 200-500 calories from the result. A smaller deficit/surplus is typically easier to follow but obviously will result in slower results. Below is an example table showing the calories needed to gain or lose weight for someone with a TDEE of {calcCalories} calories.</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -162,18 +160,18 @@ class NutritionPage extends Component {
                         <tbody>
                             <tr>
                                 <td>0 calories</td>
-                                <td>2,000 cal</td>
-                                <td>2,000 cal</td>
+                                <td>{calcCalories} cal</td>
+                                <td>{calcCalories} cal</td>
                             </tr>
                             <tr>
                                 <td>200 calories</td>
-                                <td>1,800 cal</td>
-                                <td>2,200 cal</td>
+                                <td>{calcCalories - 200} cal</td>
+                                <td>{calcCalories + 200} cal</td>
                             </tr>
                             <tr>
                                 <td>500 calories</td>
-                                <td>1,500 cal</td>
-                                <td>2,500 cal</td>
+                                <td>{calcCalories - 500} cal</td>
+                                <td>{calcCalories + 500} cal</td>
                             </tr>
                         </tbody>
                     </table>

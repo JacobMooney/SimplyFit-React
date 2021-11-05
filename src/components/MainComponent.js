@@ -4,6 +4,7 @@ import WorkoutDisplay from './WorkoutDisplayComponent';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import LandingPage from './LandingComponent';
 import NutritionPage from './NutritionComponent';
+import EducationPage from './EducationComponent';
 
 class MainComponent extends Component {
     constructor(props) {
@@ -48,7 +49,7 @@ class MainComponent extends Component {
             <Switch>
                 <Route path='/home' component={LandingPage} />
                 <Route path='/nutrition' component={NutritionPage} />
-                <Route path='/education' component={NutritionPage} />
+                <Route path='/education' component={EducationPage} />
                 <Route exact path='/options'
                     render={() => <OptionsForm formInfo={this.state} handleChange={this.handleChange} toggleChange={this.toggleChangeHandler} />
                     } />
