@@ -114,7 +114,13 @@
     justify-items: stretch;
 }
 
+.card-group>div.card {
+    background-color: #fcbf49ff;
+    filter: drop-shadow(5px 5px 1px #003049ff);
+}
+
 .workoutDisplay {
+    background-color: #fcbf49ff;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -132,13 +138,14 @@
 }
 
 ul.workoutCol {
-    background-color: #fcbf49ff;
+    background-color: #003049ff;
     filter: drop-shadow(1px 1px 1px #003049ff);
     transition: 0.3s;
+    color: white;
 }
 
-
 ul.workoutCol.list-group>h5 {
+    color: rgb(255, 255, 255);
     width: 339px;
     max-width: 339px;
     height: 24px;
@@ -148,8 +155,29 @@ ul.workoutCol.list-group>h5 {
     text-align: left;
 }
 
-html>body>#root>div.optionsPage.container>div:nth-of-type(3)>div.col {
+ul.workoutCol.list-group>li.list-group-item:hover {
+    color: #fbf9efff;
+    background-color: #fcbf49ff;
+}
+
+.container>div:nth-of-type(3)>div.col {
     text-align: right;
+}
+
+.col>div.col>h3 {
+    text-align : center;
+    line-height : 30px;
+    }
+
+a.navbar-brand.text-light {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+    font-weight: 800;
+    text-decoration-line: none;
+    font-style: normal;
+    letter-spacing: 0px;
+    padding-left: 20px;
 }
 
 .optionsCol:hover {

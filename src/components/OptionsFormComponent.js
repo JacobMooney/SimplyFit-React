@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 class OptionsForm extends Component{
     render() {
-        // console.log(this.props.formInfo)
         const currentInfo = this.props.formInfo;
         return (
             <Container className="optionsPage">
@@ -33,7 +32,7 @@ class OptionsForm extends Component{
                             <h5>Selected: {currentInfo.goalSelected}</h5>
                         </Col>
                         <Col className="col-s-4 optionsCol d-grid gap-1">
-                            <h3 className="optionsHeader">Optional Includes:</h3>
+                            <h3 className="optionsHeader">Additional Options:</h3>
                             <ButtonGroup vertical>
                                 <Button className="optionsBtn" value={currentInfo.cardio} name={"cardio"} onClick={this.props.toggleChange}>Cardio</Button>
                                 <Button className="optionsBtn" value={currentInfo.stretching} name={"stretching"} onClick={this.props.toggleChange}>Stretching</Button>
@@ -44,14 +43,13 @@ class OptionsForm extends Component{
                 </Container>
                 <Row className="submitRow">
                     <Col>
-                        <Link to="/workoutDisplay"><Button className="NavigationBtnRight btn-lg">Next</Button></Link>
+                        <Link to="/workoutDisplay"><Button className="NavigationBtnRight btn-lg">View Routine</Button></Link>
                     </Col>
                 </Row>
             </Container>
         );
     }
 }
-
 
 export default OptionsForm;
 

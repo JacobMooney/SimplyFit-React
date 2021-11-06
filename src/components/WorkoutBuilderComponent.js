@@ -34,10 +34,10 @@ function NumOfDays({ selections }) {
         nDays.push(
             <Card>
                 <CardBody className="optionsCard">
-                    <CardTitle><h3>Workout: {i+1}</h3></CardTitle>
+                    <CardTitle><h3>Workout: {i + 1}</h3></CardTitle>
                     <ListGroup className="workoutCol">
                         <CardioOption option={selections.cardio} />
-                        <DayRoutine id={i} dayNum={i+1} goalType={selections.goalSelected} selections={selections} />
+                        <DayRoutine id={i} dayNum={i + 1} goalType={selections.goalSelected} selections={selections} />
                         <StretchingOption option={selections.stretching} />
                     </ListGroup>
                 </CardBody>
@@ -50,7 +50,10 @@ function NumOfDays({ selections }) {
 function WorkoutBuilder(props) {
     const selections = props.selections;
     return (
-        <NumOfDays selections={selections} />
+        <React.Fragment>
+            <NumOfDays selections={selections} />
+        </React.Fragment>
+
     );
 }
 

@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CardGroup, Container } from 'reactstrap';
+import { CardGroup, CardHeader, Container, Button, Col, Row } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import WorkoutBuilder from './WorkoutBuilderComponent';
 
 class WorkoutDisplay extends Component {
     render() {
-        return(
+        return (
             <React.Fragment>
                 <Container className="optionsForm">
-                    <CardGroup>
-                        <WorkoutBuilder selections={this.props.selectionInfo} />
-                    </CardGroup>
+                    <Row>
+                        <Col>
+                            <Link to='/options'>
+                                <Button className="NavigationBtnLeft btn-lg">Go Back</Button>
+                            </Link>
+                            <Col><h3>Example Weekly Workout</h3></Col>
+                            <CardGroup>
+                                <WorkoutBuilder selections={this.props.selectionInfo} />
+                            </CardGroup>
+                        </Col>
+                    </Row>
                 </Container>
             </React.Fragment>
         );
