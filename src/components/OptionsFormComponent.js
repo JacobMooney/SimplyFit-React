@@ -20,7 +20,7 @@ class OptionsForm extends Component{
                                 <Button className="optionsBtn" value={3} name={"daysSelected"} onClick={this.props.handleChange}>3</Button>
                                 <Button className="optionsBtn" value={4} name={"daysSelected"} onClick={this.props.handleChange}>4</Button>
                             </ButtonGroup>
-                            <h5>Workout {currentInfo.daysSelected} days a week.</h5>
+                            <h5>Workout for {currentInfo.daysSelected} days a week.</h5>
                         </Col>
                         <Col className="col-s-4 optionsCol d-grid gap-1">
                             <h3 className="optionsHeader">Training Goal:</h3>

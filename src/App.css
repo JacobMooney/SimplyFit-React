@@ -158,6 +158,8 @@ ul.workoutCol.list-group>h5 {
 ul.workoutCol.list-group>li.list-group-item:hover {
     color: #fbf9efff;
     background-color: #fcbf49ff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-weight : 800;
 }
 
 .container>div:nth-of-type(3)>div.col {
