@@ -113,22 +113,22 @@ class NutritionPage extends Component {
                     <h5 class="mt-2">Macronutrients</h5>
                     <p>Macronutrients are the largest types of nutrients that make up calories in the things we eat. In the context
                         of fitness and weight training we are primarily interested in 3 major macronutrients;</p>
-                    <h6>Protien</h6>
-                    <p>Protiens are the building blocks your body uses to grow, build, and repair. This macronutrient is primarily
+                    <h6>Protein</h6>
+                    <p>Proteins are the building blocks your body uses to grow, build, and repair. This macronutrient is primarily
                         found in meats, poultry, fish, eggs, milk, and other animal products. There are also many plant based
-                        protien sources like beans, lentils, nuts, seeds, and some leafy greens. When it comes to weight training
-                        and muscle building protien is one of the most important macronutrients since they provide the building
+                        protein sources like beans, lentils, nuts, seeds, and some leafy greens. When it comes to weight training
+                        and muscle building protein is one of the most important macronutrients since they provide the building
                         materials to grow.</p>
                     <h6>Carbohydrates</h6>
                     <p>Carbohydrates are the most readily usable sources of energy for the cells. With the exception of fiber, all
                         carbohydrates get broken down into simple sugars. Although they sometimes have a bad reputation, due to
-                        racing insulin levels (AKA blood sugar), they are vital and necessary in order to maintain energy levels
+                        raising insulin levels (AKA blood sugar), they are vital and necessary in order to maintain energy levels
                         especially when dieting or trying to lose weight.
                     </p>
                     <h6>Fat</h6>
                     <p>
-                        Fats are similar to carbohydrates, but they are more dense and as a result contain more calories. Also fats
-                        contribute towards certain hormones, absorbtion of fat soulable vitamins, and energy
+                        Fats are similar to carbohydrates, but they are more dense and as a result contain more calories. While many fad diets may demonize them, fats
+                        contribute towards certain hormones, absorption of fat soluble vitamins, and energy
                         storage.</p>
                     <h2>Weight Loss and Gain</h2>
                     <p>When it comes to weight loss or weight gain it's often easy to get confused or discouraged due to the many
