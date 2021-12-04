@@ -97,6 +97,7 @@ class NutritionPage extends Component {
                         <li>Gender</li>
                         <li>Activity Levels</li>
                     </ul>
+                    
                     <div class="thumbnail">
                         <div class="caption">
                             <h5>Total Daily Energy Expenditure (TDEE)</h5>

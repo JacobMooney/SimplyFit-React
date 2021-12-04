@@ -5,7 +5,7 @@ function LandingPage() {
         <body class="landing-page">
             <section class="nav-section">
                 <nav class="navbar navbar-expand sticky-top">
-                    <a class="navbar-brand text-light" to='/home'>Simply Fit</a>
+                    <a href class="navbar-brand text-light" to='/home'>Simply Fit</a>
                     <div id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">

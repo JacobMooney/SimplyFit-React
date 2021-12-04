@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
+import hierarchy from "../shared/img/hierarchy.png";
+import overlap from "../shared/img/overlap.png";
 
 class EducationPage extends Component {
     constructor(props) {
@@ -63,7 +65,7 @@ class EducationPage extends Component {
                         </ul>
                     </div>
                 </nav>
-                <div class="container py-5">
+                <div class="container-sm py-5">
                     <h1>Training and Exercise</h1>
                     <p>
                         This section will cover the concepts and ideas around training that returns proven results. Fitness in general could be used to describe many types of athletics but we will be focusing primarily on weight lifting.
@@ -99,8 +101,12 @@ class EducationPage extends Component {
                                 <td>Commonly how reps and sets are written in routines. | Example; 3 x 10 would mean 10 repetitions for each of the 3 sets.</td>
                             </tr>
                             <tr>
+                                <td>1 Rep Max</td>
+                                <td>The absolute maximum amount of weight you can lift on a given exercise for 1 repetition. Sometimes tested, but often calculated using a 1 rep max calculator for saftey.</td>
+                            </tr>
+                            <tr>
                                 <td>Barbell</td>
-                                <td>Longer bars that can be loaded with individual weights.</td>
+                                <td>Long bars that can be loaded with individual weights/plates.</td>
                             </tr>
                             <tr>
                                 <td>Dumbbell</td>
@@ -118,18 +124,67 @@ class EducationPage extends Component {
                     </table>
 
                     {/* Strength vs hypertrophy types of training */}
-                    <h2 class="mt-4">Strength vs Hypertrophy</h2>
-                    <p>Although it's not absolutely necessary to understand the relationship between strength and size to make progress, being aware of these concepts can be useful in planning your routine.</p>
-                    <h5 class="mt-1">Strength</h5>
-                    <p>Strength is primarily gain through lifting heavier than you have previously, this is commonly achieved by adding small increments to weights per session. By exposing the body to higher loads spread out over time, it allows the you to get stronger while minimizing risk of injury.</p>
-                    <h6>For example;</h6>
-                    <div> <strong>Week 1</strong> - Bench Press : 100lbs for 5 reps X 5 sets</div>
-                    <div> <strong>Week 2</strong> - Bench Press : 105lbs for 5 reps X 5 sets</div>
-                    <div> <strong>Week 3</strong> - Bench Press : 110lbs for 5 reps X 5 sets</div>
-                    <div> <strong>Week 4</strong> - Bench Press : 115lbs for 5 reps X 5 sets</div>
+                    <h2 class="mt-4">Strength and Hypertrophy</h2>
+                    <h5 class="mt-4">Strength</h5>
+                    <p>Strength is gained by lifting heavier weights than you have previously. This is commonly achieved by lifting weights in the 80-95% range of your 1 rep max with gradual increments over time. This primarily applies to compound lifts by adding 5 additional pounds each week. Exposing the body to high effort loads each week allows you to get stronger while minimizing risk of injury by increasing the weight lifted gradually.</p>
+
+                    <h6>Exercise plan with a strength goal example;</h6>
+                    <div> <strong>Week 1</strong> - Bench Press : 100lbs for 5 sets X 5 reps</div>
+                    <div> <strong>Week 2</strong> - Bench Press : 105lbs for 5 sets X 5 reps</div>
+                    <div> <strong>Week 3</strong> - Bench Press : 110lbs for 5 sets X 5 reps</div>
+                    <div> <strong>Week 4</strong> - Bench Press : 115lbs for 5 sets X 5 reps</div>
+
+                    <h5 class="mt-4">Hypertrophy</h5>
+                    <p>Hypertrophy is primarily gained through a combination of volume and intensity. Volume refering to the number of sets per muscles group per week, and intensity as the relative effort per set.  Lifting with hypertrophy as a goal requires lifting in the 65-80% of 1 rep max range. Since the weight used per set is lighter it allows you to do more reps, which translates to more total volume. </p>
+
+                    <h6>Exercise plan with a hypertrophy goal example;</h6>
+                    <div> <strong>Week 1</strong> - Bench Press : 80lbs for 3 sets X 8 reps</div>
+                    <div> <strong>Week 2</strong> - Bench Press : 80lbs for 3 sets X 10 reps</div>
+                    <div> <strong>Week 3</strong> - Bench Press : 80lbs for 3 sets X 12 reps</div>
+                    <div> <strong>Week 4</strong> - Bench Press : 85lbs for 3 sets X 8 reps</div>
+
+                    <h2 class="mt-4">Training for Strength or Hypertrophy</h2>
+                    <p>A common misconception people have after learning the above concepts about strength and hypertrophy is that you can only train one at a time. While this is not entirely true or false, it is worth explaining that often routines will be oriented around a specific training goal. Because focusing on one goal at a time often is the most effecient way to train for each area. It's recommended to start with strength training and then change routines when the gains start to diminish.</p>
+
+                    <ul>
+                        <li>
+                            <h6>Strength / PowerLifting</h6>
+                            <ul>
+                                <li>Primary goal to get stronger</li>
+                                <li>Also will increase muscles size but to a lesser degree</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <h6>Hypertrophy / Bodybuilding</h6>
+                            <ul>
+                                <li>Primary goal to increase muscular size</li>
+                                <li>Likely will gain some additional strength but at a slower rate</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>So it's possible to gain both strength and size at the same time, but focusing on a specific goal often leads to faster results. The graph below illustrates this relationship between the two primary training targets.</p>
+
+                    <img style={{height: 500}} alt="Strength vs Hypertrophy" src={overlap} />
 
                     {/* Highlight the importance of exercise selections - compounds vs isolation / multi-joint vs single-joint */}
                     <h2 class="mt-4">Exercise Selection</h2>
+                    <p>When deciding on the exercises to include in a routine, it's worth considering which ones will provide the most results. In order to make steady progress building a routine intelligently can make it twice as effective.</p>
+                    <h5 class="mt-4">Barbell Exercises</h5>
+                    <p>Lifts using the barbell should make up the foundation of any good routine. Barbell movements are compound movements, which means they work multiple muslces at once. Additionally most of these exercises can be loaded much heavier than other options, making them great for increasing strength.</p>
+
+                    <h5 class="mt-4">Dumbbell Exercises</h5>
+                    <p>Lifts using the barbell should make up the foundation of any good routine. Barbell movements are compound movements, which means they work multiple muslces at once. Additionally most of these exercises can be loaded much heavier than other options, making them great for increasing strength.</p>
+
+                    <h5 class="mt-4">Machine Exercises</h5>
+                    <p>Lifts using the barbell should make up the foundation of any good routine. Barbell movements are compound movements, which means they work multiple muslces at once. Additionally most of these exercises can be loaded much heavier than other options, making them great for increasing strength.</p>
+
+                    <h5 class="mt-4">Isolation Exercises</h5>
+                    <p>Lifts using the barbell should make up the foundation of any good routine. Barbell movements are compound movements, which means they work multiple muslces at once. Additionally most of these exercises can be loaded much heavier than other options, making them great for increasing strength.</p>
+
+                    <img style={{height: 390}} alt="hierarchy of exercises" src={hierarchy} />
+                    
                     {/* List off core compound movements */}
                     <h4 class="mt-1">Compound Movements</h4>
                     {/* Use cases for both */}

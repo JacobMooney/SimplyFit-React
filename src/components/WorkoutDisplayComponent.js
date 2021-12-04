@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CardGroup, CardHeader, Container, Button, Col, Row } from 'reactstrap';
+import { CardGroup, Container, Button, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import WorkoutBuilder from './WorkoutBuilderComponent';
 
