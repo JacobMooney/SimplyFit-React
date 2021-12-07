@@ -37,16 +37,6 @@ function LandingPage() {
                     </div>
                 </div>
             </header>
-            <section class="infoSection" id="about">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center">
-                            <h2 class="text-white mt-0">ABOUT</h2>
-                            <p class="text-white-50 mb-5">Simply Fit is a place for beginners to take their first step torwards meeting their fitness goals.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section class="infoSection" id="nutrition">
                 <div class="container">
                     <div class="row justify-content-end">

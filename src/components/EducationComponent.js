@@ -143,7 +143,7 @@ class EducationPage extends Component {
                     <div> <strong>Week 4</strong> - Bench Press : 115lbs for 5 sets X 5 reps</div>
 
                     <h5 class="mt-4">Hypertrophy</h5>
-                    <p>Hypertrophy is primarily gained through a combination of volume and intensity. Volume refering to the number of sets per muscles group per week, and intensity as the relative effort per set.  Lifting with hypertrophy as a goal requires lifting in the 65-80% of 1 rep max range. Since the weight used per set is lighter it allows you to do more reps, which translates to more total volume. </p>
+                    <p>Hypertrophy is primarily gained through a combination of volume and intensity. Volume referring to the number of sets per muscles group per week, and intensity as the relative effort per set.  Lifting with hypertrophy as a goal requires lifting in the 65-80% of 1 rep max range. Since the weight used per set is lighter it allows you to do more reps, which translates to more total volume. </p>
 
                     <h6>Exercise plan with a hypertrophy goal example;</h6>
                     <div> <strong>Week 1</strong> - Bench Press : 80lbs for 3 sets X 8 reps</div>
@@ -192,17 +192,14 @@ class EducationPage extends Component {
                         <p>Machine exercises often get a bad rep for not being "real lifts" but they often excel in their specific muscle building goal. Machines allow you to train for certain lifts before you have the nessecarry strength to preform them. For example; using machines you can train the movement pattern for pull ups, building your arm and lat strength enough to eventually preform them with bodyweight. Another benifit of machines, is they allow you to push yourself closer to failure more safely without the need of a spotter.</p>
                     </ul>
 
-                    {/* List off core compound movements */}
-                    <h4 class="mt-1">Compound Movements</h4>
-                    {/* Use cases for both */}
-                    <h4 class="mt-1">Isolation Movements and Machines</h4>
-
                     {/* Talk about days per week and recovery */}
                     <h2 class="mt-4">Frequency of training</h2>
+                    <p>Beginners typically can recover from training fairly quickly, but as you get more advanced you will find what your body can handle. Generally larger muscles take longer to recover like the quadriceps of the legs, and smaller muscles take less time like the deltoids of the shoulders. Which is why some people will use routines that alternate between body parts. That being said, typically you can work each muscle group at least 3 times a week. I recommend full body routines as they take advantage of this recovery rate, while also keeping the workouts enjoyable.</p>
 
                     {/* How to measure progress with volume or weight */}
                     <h2 class="mt-4">Tracking Progress</h2>
-
+                    <p>Just like monitoring your weight, and paying attention to what you eat, tracking your progress in the gym is important to getting results. The key part of tracking progress is that you have some sort of metric for showing you're improving each week. Increasing the weight used is a common variable, but you can also use volume, rest times, total number of exercises, or anything that gradually increases the challenge each week.</p>
+                    <p>Here is a link to an <a href='http://www.fitnotesapp.com/'>Android</a> and <a href='https://www.getfitnotes.com/'>IOS</a> version of the same app that is great for tracking your gym progress. Using these in combination with the routine builder, you will be able to start working out on the right foot.</p>
                 </div>
             </body >
         );
