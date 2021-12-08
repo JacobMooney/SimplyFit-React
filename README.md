@@ -7,3 +7,4 @@ I am passionate about fitness which is what inspired this idea, and eventually i
 ## About the routine builder
 The routine builder is a tool that takes in user selections and returns a routine determined by; number of days per week, fitness goal type, and potentially included time for cardio and stretching.
 
+Live Site - https://simply-fit.herokuapp.com/

@@ -174,13 +174,13 @@ class EducationPage extends Component {
 
                     <p>So it's possible to gain both strength and size at the same time, but focusing on a specific goal often leads to faster results. The graph below illustrates this relationship between the two primary training targets.</p>
 
-                    <img style={{ height: 500 }} alt="Strength vs Hypertrophy" src={overlap} />
+                    <img className="diagram" style={{ height: 500 }} alt="Strength vs Hypertrophy" src={overlap} />
 
                     {/* Highlight the importance of exercise selections - compounds vs isolation / multi-joint vs single-joint */}
                     <h2 class="mt-4">Exercise Selection</h2>
                     <p>When deciding on the exercises to include in a routine, it's worth considering which ones will provide the most results. In order to make steady progress building a routine intelligently can make it twice as effective. Below is general list of the catagories most equipment will fit into and should make up the bulk of any routine.</p>
 
-                    <img style={{height: 390}} alt="hierarchy of exercises" src={hierarchy} />
+                    <img className="diagram" style={{height: 390}} alt="hierarchy of exercises" src={hierarchy} />
                     <ul>
                         <h5>Barbell Exercises</h5>
                         <p>Lifts using the barbell should make up the foundation of any good routine. Barbell movements are primarily compound movements, which means they work multiple muscles at once. Additionally most of these exercises can be loaded much heavier than other options, making them great for increasing strength.</p>
