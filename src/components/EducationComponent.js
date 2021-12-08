@@ -202,8 +202,23 @@ class EducationPage extends Component {
                     <p>Here is a link to an <a href='http://www.fitnotesapp.com/'>Android</a> and <a href='https://www.getfitnotes.com/'>IOS</a> version of the same app that is great for tracking your gym progress. Using these in combination with the routine builder, you will be able to start working out on the right foot.</p>
 
                     <h2 class="mt-4">About the routine builder</h2>
-                    <p>The routine builder is meant to give you a basic idea of what a routine might look like, and hopefully a starting point to get started.</p>
-                    
+                    <p>The routine builder is meant to give you a basic idea of what a routine might look like, and hopefully a starting point. The options on the builder are fairly straight forward but I wanted to elaborate a little on each of the routine types; Bodybuilding, Strength, and Hybrid. Each one of these routines I tried to encompass a total body fitness mindset, but each option does push towards a specific goal.</p>
+                    <ul>
+                        <li>
+                            <h5>Bodybuilding</h5>
+                            <p>This routine is primarily focused on muscle size, but a complete beginner could expect to make some strength gains as well. The emphasis here is on training volume and taking the majority of sets to the 10-12 rep range while preforming more exercises total. Due to the volume of this type of routine, most of the work should be done in the 65% to 80% 1 rep max range.</p>
+                        </li>
+    
+                        <li>
+                            <h5 class="mt-4">Strength</h5>
+                            <p>This option is focused on gaining strength by keeping the reps per set smaller in the beginning of the routine. While strength routines are about getting stronger faster, they also tend to benifit from less is more. So the first 2 lifts of each day should be the hardest part of the session in the 85% to 95% 1 rep max range. The remaining exercises for each day will help condition and provide some support for overall strength.</p>
+                        </li>
+    
+                        <li>
+                            <h5 class="mt-4">Hybrid</h5>
+                            <p>Finally the hybrid routine is aimed at taking the best of both training goals. The key point here is partially copying the strength routines hard first 2 lifts, but adding more total lifts/volume to the workout like the bodybuilding routine.</p>
+                        </li>
+                    </ul>
                 </div>
             </body >
         );
