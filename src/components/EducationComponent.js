@@ -174,7 +174,7 @@ class EducationPage extends Component {
 
                     <p>So it's possible to gain both strength and size at the same time, but focusing on a specific goal often leads to faster results. The graph below illustrates this relationship between the two primary training targets.</p>
 
-                    <img style={{height: 500}} alt="Strength vs Hypertrophy" src={overlap} />
+                    <img style={{ height: 500 }} alt="Strength vs Hypertrophy" src={overlap} />
 
                     {/* Highlight the importance of exercise selections - compounds vs isolation / multi-joint vs single-joint */}
                     <h2 class="mt-4">Exercise Selection</h2>
@@ -200,6 +200,10 @@ class EducationPage extends Component {
                     <h2 class="mt-4">Tracking Progress</h2>
                     <p>Just like monitoring your weight, and paying attention to what you eat, tracking your progress in the gym is important to getting results. The key part of tracking progress is that you have some sort of metric for showing you're improving each week. Increasing the weight used is a common variable, but you can also use volume, rest times, total number of exercises, or anything that gradually increases the challenge each week.</p>
                     <p>Here is a link to an <a href='http://www.fitnotesapp.com/'>Android</a> and <a href='https://www.getfitnotes.com/'>IOS</a> version of the same app that is great for tracking your gym progress. Using these in combination with the routine builder, you will be able to start working out on the right foot.</p>
+
+                    <h2 class="mt-4">About the routine builder</h2>
+                    <p>The routine builder is meant to give you a basic idea of what a routine might look like, and hopefully a starting point to get started.</p>
+                    
                 </div>
             </body >
         );
